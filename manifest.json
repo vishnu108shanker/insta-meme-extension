@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram Meme Blocker",
+  "version": "1.0",
+
+  "web_accessible_resources": [
+    {
+      "resources": ["meme.jpg"],
+      "matches": ["https://whistleblower-gamma.vercel.app/*", "https://www.instagram.com/*"]
+    }
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["https://whistleblower-gamma.vercel.app/*", "https://www.instagram.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
